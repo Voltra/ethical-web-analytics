@@ -1,0 +1,30 @@
+{
+  "name": "ethical-web-analytics",
+  "version": "0.0.1",
+  "description": "An ethical alternative to modern web analytics like Google Analytics/GTM",
+  "keywords": [
+    "analytics",
+    "gtm",
+    "ethical",
+    "gdpr",
+    "gdpr-compliant"
+  ],
+  "homepage": "https://github.com/Voltra/ethical-web-analytics#readme",
+  "bugs": {
+    "url": "https://github.com/Voltra/ethical-web-analytics/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Voltra/ethical-web-analytics.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Voltra <dev@ludwig-guerin.fr>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  }
+}
