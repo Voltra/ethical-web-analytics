@@ -1,0 +1,20 @@
+{
+	"extends": "./tsconfig.json",
+	"include": [
+		"src/**/*.ts",
+		"tests/**/*.ts",
+		"*.config.ts",
+		"*.config.js",
+		"*.config.cjs",
+		"*.config.mjs",
+	],
+	"compilerOptions": {
+		"declaration": false,
+		"composite": false,
+		"target": "ES6",
+		"module": "ES6",
+        "ignoreDeprecations": "6.0",
+		"moduleResolution": "node",
+		"tsBuildInfoFile": ".eslint.tsbuildinfo",
+	}
+}

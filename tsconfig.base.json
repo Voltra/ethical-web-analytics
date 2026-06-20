@@ -1,18 +1,24 @@
 {
-    "extends": "./tsconfig.base.json",
+    "exclude": [
+        "dist/**",
+        "lib/**",
+        "node_modules/**"
+    ],
     // Visit https://aka.ms/tsconfig to read more about this file
     "compilerOptions": {
         // File Layout
-        "rootDir": "./src",
-        "declarationDir": "./lib",
+        "rootDir": "./",
+        "outDir": "./dist",
         // Environment Settings
         // See also https://aka.ms/tsconfig/module
+        "module": "nodenext",
+        "target": "esnext",
         "lib": [
             "DOM",
             "ES2015",
             "WebWorker",
             "ScriptHost",
-            "ES2021",
+            "ES2021"
         ],
         "types": ["node"],
         // For nodejs:
@@ -21,9 +27,6 @@
         // and npm install -D @types/node
 
         // Other Outputs
-        "sourceMap": true,
-        "declaration": true,
-        "declarationMap": true,
         // Stricter Typechecking Options
         "noUncheckedIndexedAccess": true,
         "exactOptionalPropertyTypes": true,
@@ -39,18 +42,21 @@
         // Recommended Options
         "strict": true,
         "jsx": "react-jsx",
+//        "verbatimModuleSyntax": true,
         "isolatedModules": true,
         "noUncheckedSideEffectImports": true,
         "moduleDetection": "force",
         "skipLibCheck": true,
+
+        // Custom options
+        "alwaysStrict": true,
         "allowSyntheticDefaultImports": true,
         "rewriteRelativeImportExtensions": true,
         "incremental": true,
-
-        //
-        "outDir": "./tmp",
-        "target": "ESNext",
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext"
+        "useDefineForClassFields": true,
+        "newLine": "lf",
+        "stripInternal": true,
+        "noEmitOnError": true,
+        "esModuleInterop": true
     }
 }

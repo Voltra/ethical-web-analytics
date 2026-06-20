@@ -1,0 +1,15 @@
+{
+	"extends": "./tsconfig.base.json",
+	"exclude": ["./src/index.ts"],
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@tests/*": ["./tests/*"]
+		},
+		"tsBuildInfoFile": ".tests.tsbuildinfo",
+	},
+//	"ts-node": {
+//		"require": ["tsconfig-paths/register"]
+//	}
+}
