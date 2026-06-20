@@ -1,4 +1,4 @@
-import type { StorageEngine } from "../storage/index.ts";
+import type { StorageEngine } from "../storage";
 import { generateId, type Id } from "./generate.ts";
 import { isValidId } from "./check.ts";
 

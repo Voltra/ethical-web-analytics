@@ -1,9 +1,9 @@
 import type { AnalyticsData } from "./AnalyticsData.ts";
-import { retrieveId } from "../id/index.ts";
-import { storageEngineFactory } from "../storage/index.ts";
+import { retrieveId } from "../id";
+import { storageEngineFactory } from "../storage";
 import { AnalyticsTransmitter } from "./AnalyticsTransmitter.js";
 import { isDate, isValid, parseISO } from "date-fns";
-import { onEach } from "../arrays/index.ts";
+import { onEach } from "../arrays";
 
 export class AnalyticsRegister extends Array<AnalyticsData> {
     private readonly transmitter: AnalyticsTransmitter;

@@ -31,9 +31,10 @@ const isWrapped = <T>(input: unknown): input is Wrapped<T> => {
         return false;
     }
 
-    // @ts-expect-error "data" does not exist on type object, "createdAt" does not exist on type object
     if (
+        // @ts-expect-error "data" does not exist on type object, "createdAt" does not exist on type object
         typeof input.data === "undefined" ||
+        // @ts-expect-error "data" does not exist on type object, "createdAt" does not exist on type object
         typeof input.createdAt !== "string"
     ) {
         return false;

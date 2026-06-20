@@ -1,4 +1,4 @@
-import type { AnalyticsData } from "./modules/analytics/index.ts";
+import type { AnalyticsData } from "./modules/analytics";
 import { AnalyticsRegister } from "./modules/analytics/AnalyticsRegister.ts";
 import { getGlobal } from "./modules/global.ts";
 

@@ -1,1 +1,1 @@
-export { storageEngineFactory, type StorageEngine } from "./engines/index.ts";
+export { storageEngineFactory, type StorageEngine } from "./engines";
