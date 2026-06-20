@@ -1,1 +1,1 @@
-export { onEach } from "./onEach.ts";
+export { onEach } from "./onEach";

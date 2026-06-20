@@ -1,7 +1,7 @@
-import { SessionStorageEngine } from "./SessionStorageEngine.ts";
-import { LocalStorageEngine } from "./LocalStorageEngine.ts";
-import { UnsupportedError } from "../../errors/index.ts";
-import type { StorageEngine } from "./StorageEngine.ts";
+import { SessionStorageEngine } from "./SessionStorageEngine";
+import { LocalStorageEngine } from "./LocalStorageEngine";
+import { UnsupportedError } from "../../errors";
+import type { StorageEngine } from "./StorageEngine";
 
 export const storageEngineFactory = (): StorageEngine => {
     if (typeof sessionStorage !== "undefined" && !!sessionStorage) {

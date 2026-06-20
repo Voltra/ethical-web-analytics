@@ -1,16 +1,19 @@
 {
 	"extends": "./tsconfig.base.json",
+	"include": [
+		"./src/**/*.ts"
+	],
 	"compilerOptions": {
-        "rootDir": "./src",
+		"rootDir": "./src",
 		"outDir": "./dist/esm",
-        "declarationDir": "./lib",
+		"declarationDir": "./lib",
 		"target": "ES6",
 		"module": "ES6",
-        "ignoreDeprecations": "6.0",
+		"ignoreDeprecations": "6.0",
 		"moduleResolution": "node",
 		"tsBuildInfoFile": ".esm.tsbuildinfo",
-        "sourceMap": true,
-        "declaration": true,
-        "declarationMap": true
-    }
+		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true
+	}
 }

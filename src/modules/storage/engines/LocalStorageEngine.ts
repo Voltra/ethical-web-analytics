@@ -1,4 +1,4 @@
-import type { StorageEngine } from "./StorageEngine.ts";
+import type { StorageEngine } from "./StorageEngine";
 import {
     getDate,
     getMonth,
@@ -10,7 +10,7 @@ import {
     parseISO,
     toDate,
 } from "date-fns";
-import { deserialize, serialize } from "./serde.ts";
+import { deserialize, serialize } from "./serde";
 
 const now = () => toDate(Date.now());
 

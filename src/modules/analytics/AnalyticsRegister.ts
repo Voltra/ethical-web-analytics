@@ -1,7 +1,7 @@
-import type { AnalyticsData } from "./AnalyticsData.ts";
+import type { AnalyticsData } from "./AnalyticsData";
 import { retrieveId } from "../id";
 import { storageEngineFactory } from "../storage";
-import { AnalyticsTransmitter } from "./AnalyticsTransmitter.js";
+import { AnalyticsTransmitter } from "./AnalyticsTransmitter";
 import { isDate, isValid, parseISO } from "date-fns";
 import { onEach } from "../arrays";
 

@@ -1,4 +1,3 @@
-// @ts-expect-error TS1479 This file is meant as a standalone and thus can use ES6 syntax
 import { defineConfig } from "vitest/config";
 import { fileURLToPath } from "node:url";
 
@@ -19,7 +18,7 @@ export default defineConfig({
             tsconfig: "./tsconfig.tests.json",
         },
         // isolate: false,
-        setupFiles: [here("tests/global.setup.ts")],
+        // setupFiles: [here("tests/global.setup.ts")],
     },
     resolve: {
         alias: {

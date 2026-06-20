@@ -1,1 +1,1 @@
-export type { AnalyticsData } from "./AnalyticsData.ts";
+export type { AnalyticsData } from "./AnalyticsData";

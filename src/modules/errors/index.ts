@@ -1,1 +1,1 @@
-export { UnsupportedError } from "./UnsupportedError.ts";
+export { UnsupportedError } from "./UnsupportedError";

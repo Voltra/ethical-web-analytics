@@ -1,6 +1,6 @@
-import type { AnalyticsData } from "./AnalyticsData.ts";
+import type { AnalyticsData } from "./AnalyticsData";
 import type { Id } from "../id";
-import { serialize } from "../storage/engines/serde.ts";
+import { serialize } from "../storage/engines/serde";
 
 export class AnalyticsTransmitter {
     constructor(

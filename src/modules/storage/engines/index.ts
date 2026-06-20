@@ -1,3 +1,3 @@
-export type { StorageEngine } from "./StorageEngine.ts";
+export type { StorageEngine } from "./StorageEngine";
 
-export { storageEngineFactory } from "./factory.ts";
+export { storageEngineFactory } from "./factory";

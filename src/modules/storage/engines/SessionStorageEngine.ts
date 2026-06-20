@@ -1,5 +1,5 @@
-import type { StorageEngine } from "./StorageEngine.ts";
-import { deserialize, serialize } from "./serde.ts";
+import type { StorageEngine } from "./StorageEngine";
+import { deserialize, serialize } from "./serde";
 
 export class SessionStorageEngine implements StorageEngine {
     constructor(private storage: Window["sessionStorage"] = sessionStorage) {}

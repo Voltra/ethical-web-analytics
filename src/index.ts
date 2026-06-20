@@ -1,6 +1,6 @@
 import type { AnalyticsData } from "./modules/analytics";
-import { AnalyticsRegister } from "./modules/analytics/AnalyticsRegister.ts";
-import { getGlobal } from "./modules/global.ts";
+import { AnalyticsRegister } from "./modules/analytics/AnalyticsRegister";
+import { getGlobal } from "./modules/global";
 
 interface GlobalEthicalWebAnalytics {
     dataLayer?: AnalyticsData[];
@@ -86,4 +86,4 @@ export const bootEthicalWebAnalytics = (
 
 export const getDataLayer = () => getGlobal()[GLOBAL_VAR_NAME]!;
 
-export type { AnalyticsData } from "./modules/analytics/AnalyticsData.ts";
+export type { AnalyticsData } from "./modules/analytics/AnalyticsData";

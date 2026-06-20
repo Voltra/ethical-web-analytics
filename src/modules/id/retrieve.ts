@@ -1,6 +1,6 @@
 import type { StorageEngine } from "../storage";
-import { generateId, type Id } from "./generate.ts";
-import { isValidId } from "./check.ts";
+import { generateId, type Id } from "./generate";
+import { isValidId } from "./check";
 
 export const SESSION_ID_KEY = "ethical-web-analytics@sessionId";
 
